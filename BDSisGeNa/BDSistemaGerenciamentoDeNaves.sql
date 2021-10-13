@@ -1,5 +1,5 @@
 
-	                                         --** PLANETAS **--
+									--** CRIANDO TABELA PLANETAS **--
 CREATE TABLE Planetas(
 	IdPlaneta int NOT NULL,
 	Nome varchar(50) NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE Planetas(
 GO
 ALTER TABLE Planetas ADD CONSTRAINT PK_Planetas PRIMARY KEY (IdPlaneta);
 GO
-											 --** NAVES **--
+									--** CRIANDO TABELANAVES **--
 CREATE TABLE Naves(
 	IdNave int NOT NULL,
 	Nome varchar(100) NOT NULL,
@@ -24,7 +24,7 @@ CREATE TABLE Naves(
 GO
 ALTER TABLE Naves ADD CONSTRAINT PK_Naves PRIMARY KEY (IdNave);
 GO
-                                             --** PILOTOS **--
+									--** CRIANDO TABELA PILOTOS **--
 CREATE TABLE Pilotos(
 	IdPiloto int NOT NULL,
 	Nome varchar(200) NOT NULL,
@@ -39,7 +39,7 @@ REFERENCES Planetas (IdPlaneta)
 GO
 ALTER TABLE Pilotos CHECK CONSTRAINT FK_Pilotos_Planetas
 GO
-											--** PILOTOS NAVES **--
+									--** CRIANDO TABELA PILOTOS NAVES **--
 CREATE TABLE PilotosNaves(
 	IdPiloto int NOT NULL,
 	IdNave int NOT NULL,
@@ -56,8 +56,8 @@ REFERENCES Naves (IdNave)
 GO
 ALTER TABLE PilotosNaves  ADD CONSTRAINT DF_PilotosNaves_FlagAutorizado  DEFAULT (1) FOR FlagAutorizado
 GO
-                                                    --** HISTORICOS DE VIAGENS **--
 
+									--** CRIANDO TABELA DE HISTORICOS DE VIAGENS **--
 CREATE TABLE HistoricoViagens(
 	IdNave int NOT NULL,
 	IdPiloto int NOT NULL,
