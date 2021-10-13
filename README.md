@@ -22,7 +22,7 @@
 
 
 
-![Diagrama BootCamp EVERIS](C:\Users\kioce\OneDrive\Área de Trabalho\Cursos DIO\BootCampEVERIS\CriandoUmBDdeNavesSatrWars\Diagrama BootCamp EVERIS.jpeg)
+![Diagrama BootCamp EVERIS](https://github.com/CaioHangai/BDGerenciadorEspaconavesStarWars/blob/master/BDSisGeNa/DERImg/DERSisGeNa.jpeg)
 
 # 
 
